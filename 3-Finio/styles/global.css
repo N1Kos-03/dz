@@ -20,7 +20,8 @@ body {
     margin: 0;
     font-style: normal;
     background-color: #FFFFFF;
-    
+    min-width: min-content;
+ 
 }
 
 a{

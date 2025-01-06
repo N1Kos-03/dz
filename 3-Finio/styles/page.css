@@ -1,7 +1,7 @@
-.head-hero__wrapper {
-    background: linear-gradient(172deg, #357EFE 75%, #ffffff 75%);
-    margin-bottom: 80px;
-    
+
+.head-hero{
+    background: linear-gradient(171deg, #357EFE, #357EFE 69%, transparent calc(69% + 1px));
+    padding-top: 60px;
 }
  
 .section{
@@ -20,6 +20,7 @@
     gap: 8px;
     position: relative;
     padding: 0 20px;
+    margin-bottom: 80px;
 }
 
 .hero__left{  
@@ -30,6 +31,7 @@
 
 .hero__right img{
   max-width: 100%;
+
   
 }
 
@@ -87,7 +89,8 @@
     font-weight: 600;
     line-height: 120%;
     margin: 0;
-    width: 540px;
+    max-width: 540px;
+
 }
 .info__text p {
     font-size: 18px;
@@ -99,7 +102,8 @@
 }
 
 .info__img img{
-    max-width: 100%;
+    padding: 10px;
+    max-width:  100%;
 }
 
 .section__blue{
@@ -245,19 +249,22 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 24px;
+    
     border-radius: 16px;
     
 }
 
 .support__img img{
     width: 100%;
+   display: block;
+    
 }
 
 .support__info {
     display: flex;
     flex-direction: column;
     width: 35%;
+    padding: 20px;
 }
 
 .support__info h3{
@@ -273,7 +280,7 @@
     font-weight: 500;
     line-height: 23.8px;
     color:  #FFFFFFCC;
-    width: 83%;
+ 
 }
 
 .support__social {
@@ -346,12 +353,12 @@
 }
 
 .span__benefit {
-    margin-right: 72px;
+    margin-right: 65px;
    
 }
 .span__month {
     margin-right: 20px;
-    
+
 }
 
 .line{
@@ -383,6 +390,7 @@
 .reviews-slider {
     background-color: var(--color-blue);
     display: flex;
+    justify-content: space-between;
     border-radius: 8px;
     justify-content: center;
     max-height: 419px;
@@ -423,11 +431,11 @@
     display: none;
 }
 
-@media (max-width:1480px){
+@media (max-width:1550px){
 
-    .head-hero__wrapper {
+    .head-hero {
      
-        background: linear-gradient(160deg, #357EFE 75%, #ffffff 75%);
+        background: linear-gradient(160deg,  #357EFE, #357EFE 69%, transparent calc(69% + 1px) );
     }
 }
 
@@ -436,18 +444,20 @@
 
 @media (max-width:1382px){
 
-    .head-hero__wrapper {
-     
-        background: linear-gradient(160deg, #357EFE 75%, #ffffff 75%);
+    .head-hero {
+       margin-top: -10px;
+        background: linear-gradient(159deg,#357EFE, #357EFE 69%, transparent calc(69% + 1px));
     }
 
     .hero__right img{
-        margin-top: 80px;
+        margin-top: 50px;
         
       }
 }
 
 @media (max-width:1230px){
+
+  
 
     .info__left {
     flex-direction: column-reverse;
@@ -494,7 +504,7 @@
     flex-direction: column-reverse;
     max-height: 909px;
     align-items: center;
-    
+
  }
 
     .reviews__info {
@@ -508,6 +518,8 @@
     .reviews__img img {
         border-radius: 8px;
        max-width: 100%;
+       padding: 12px;
+       display: block;
       
     }
 
@@ -529,9 +541,9 @@
 
 @media (max-width:1115px){
 
-    .head-hero__wrapper {
-        height: 850px;
-        background: linear-gradient(170deg, #357EFE 75%, #ffffff 75%);
+    .head-hero {
+        height: 650px;
+        background: linear-gradient(170deg, #357EFE, #357EFE 69%, transparent calc(69% + 1px));
         margin-bottom: -100px;
     }
 
@@ -539,7 +551,7 @@
         justify-content: center;
         align-items: center;
         margin-left: 100px;
-
+        margin-top: -50px;
     }
 
     .hero__right img{
@@ -593,10 +605,10 @@
 
 @media (max-width:770px){
 
-    .head-hero__wrapper {
-        height: 850px;
-        background: linear-gradient(170deg, #357EFE 75%, #ffffff 75%);
-        margin-bottom: -100px;
+    .head-hero {
+        height: 650px;
+        background: linear-gradient(170deg,#357EFE, #357EFE 69%, transparent calc(69% + 1px));
+       
     }
   
     .advantages__item {
@@ -612,7 +624,7 @@
 
      .info__text h3 {
         font-size: 32px;
-        width: 390px;
+        max-width: 320px;
         
     }
 
@@ -623,12 +635,13 @@
 
     .mob__vers h2{
         font-size: 36px;
+    
         
     }
 
     .mob__vers p{
         text-align: start;
-        margin-left: 10px;
+        
         width: 75%;
     }
 
@@ -646,14 +659,16 @@
      .reviews-wrapper h2 {
         font-size: 36px;
     }
+
+   
 }
 
 @media (max-width:680px){
 
-    .head-hero__wrapper {
-        height: 850px;
-        background: linear-gradient(170deg, #357EFE 75%, #ffffff 75%);
-        margin-bottom: -100px;
+    .head-hero {
+        height: 650px;
+        background: linear-gradient(170deg, #357EFE, #357EFE 69%, transparent calc(69% + 1px));
+       
     }
 
 
@@ -670,22 +685,23 @@
         padding: 0 30px;
     }
 
-    .info__text h3 {
-        width: 330px;
-    }
-
     .section__blue{
       margin-top: -78px;
     }
+
+    .reviews__img img {
+        padding: 0;
+       
+     }
     
 }
 
 @media (max-width:570px){
 
-    .head-hero__wrapper {
-        height: 900px;
-        background: linear-gradient(170deg, #357EFE 75%, #ffffff 75%);
-        margin-bottom: -100px;
+    .head-hero {
+        height: 650px;
+        background: linear-gradient(170deg,#357EFE, #357EFE 69%, transparent calc(69% + 1px));
+       
     }
 
     .advantages__item {
@@ -724,9 +740,13 @@
 
     .mob__vers h2{
         width: 50%;
-        margin-left: -100px;
+        margin-left: -160px;
         line-height: 43.2px;
         margin-bottom: 5px;
+    }
+
+    .mob__vers p{
+        margin-left: -40px;
     }
     
     .mob__vers img{
@@ -740,7 +760,7 @@
     .support__img img{
         width: 75%;
         margin-left: 50px;
-        margin-bottom: -5px;
+
         
     }
 
