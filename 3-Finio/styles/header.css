@@ -1,5 +1,6 @@
 .header{
     background-color: var(--color-blue);
+   
 }
 
 .menu {
@@ -34,7 +35,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 40px 24px;
-   
+    
 }
 
 
@@ -49,6 +50,10 @@
     border-radius: var(--border-32);
 }
 
+.header__login:hover{
+  background-color: #f8f8f8;
+  
+}
 
 .header__mobile-menu-button{
     display: none;

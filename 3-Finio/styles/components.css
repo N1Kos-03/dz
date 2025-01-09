@@ -31,6 +31,10 @@
     text-align: center;
 }
 
+.sub:hover{
+    background-color:  #f8f8f8;
+}
+
 .line__hr{
     width: 80vw;
     height: 1px;
@@ -89,32 +93,23 @@
     line-height: 21px;
 }
 
-.card:hover{
+.card:last-child{
     background-color: #357EFE;
-    color: #FFFFFF;
-    cursor: pointer;
+    color: #ffffff;
+}
+
+.card:last-child .btn{
+    background-color: white;
+    color: #007bff;
+}
+
+.card:last-child .btn:hover{
+    background-color:  #f8f8f8;
     
 }
-
-.card:hover .card__p {
-    color: #FFFFFF99;
-    
-}
-
-.card:hover .card__p3 {
-    color: #FFFFFF99;
-    
-}
-
-.card:hover .price__item{
-    color: #FFFFFF;
-}
+ 
 
 
-.card:hover .btn{
-    background-color: #FFFFFF;
-    color: #357EFE;
-}
 
 .active {
     background-color: #FFC736;
@@ -140,7 +135,33 @@
     margin-left: -10px;
 }
 
-@media (max-width:1115px){
+.btn:hover {
+    background-color: #1b79dd;
+}
+
+
+
+.arrowr{
+    transform: rotate(180deg);
+    cursor: pointer;
+    height: 100px;
+    align-self: center;
+}
+
+.arrow{
+height: 100px;
+align-self: center;
+}
+
+.arrow:hover circle{
+    fill: white;
+}
+
+.arrowr:hover circle{
+    fill: white;
+}
+
+@media (max-width:1155px){
     .cards{
         justify-content: center;
     }
@@ -148,12 +169,22 @@
     .line__hr{
         margin-bottom: 100px;
     }
+    .line__hero{
+        display: flex;
+         width: 98vw;
+         height: 1px;
+         margin: 0 auto;
+         border: 1px solid #ffffff14;
+         margin-top: -60px;
+         margin-bottom: 60px;
+     } 
 }
 
 @media (max-width:770px){
   
     .hero__h1{
         font-size: 32px;
+        width: 390px;
     }
 
     .rate__h2{
@@ -193,15 +224,7 @@
 
 @media (max-width:480px){
 
-    .line__hero{
-       display: flex;
-        width: 98vw;
-        height: 1px;
-        margin: 0 auto;
-        border: 1px solid #ffffff14;
-        margin-top: -60px;
-        margin-bottom: 60px;
-    } 
+   
 
     .hero__h1{
         width: 390px;
