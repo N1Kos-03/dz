@@ -29,6 +29,7 @@ addTask('Погулять с собакой', 1);
 removeTask(2);
 updateTask(1, { priority: 3});
 
+
 console.log('Все задачи:', tasks);
 console.log('Задачи отсортированы по приоритету от меньшего к большему:', tasks),sortTasks('priority');
 

@@ -3,6 +3,7 @@ const query = {
   take: 10
 }
 
+
 function makeQuery(query) {
   let result = "";
   for (let key in query) {
