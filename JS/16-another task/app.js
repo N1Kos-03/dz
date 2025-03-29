@@ -1,14 +1,9 @@
-const newTask = {
-  tasks: [{
-    id: 1,
-    name: 'тест',
-    description: 'описание',
-    order: 0
-  }],
+const ToDoList = {
+  tasks: [],
   lastId: 0,
 
-  addTask(title, priority, name , description, order) {
-    this.tasks.push({ title, id: ++this.lastId, priority, name, description, order });
+  addTask(title, priority) {
+    this.tasks.push({ title, id: ++this.lastId, priority });
     console.log(`Добавлена задача: ${title}`);
   },
 
@@ -37,16 +32,25 @@ const newTask = {
   }
 };
 
-// Пример использования:
-newTask.addTask('Помыть посуду', 2, 'Уборка', 'Помыть посуду в раковине', 2);
-newTask.addTask('Убрать комнату', 3,'Уборка', 'Убраться в комнате', 3);
-newTask.addTask('Погулять с собакой', 1,'Прогулка', 'Погулять с собакой во дворе', 1 );
+const newTask = {
+  tasks: [],
+};
 
-newTask.removeTask(2);
-newTask.updateTask(3, { title: 'Погулять с собаками' });
+newTask.addTask = ToDoList.addTask.bind(newTask);
+newTask.updateTask = ToDoList.updateTask.bind(newTask);
+newTask.removeTask = ToDoList.removeTask.bind(newTask);
+newTask.showTasks = ToDoList.showTasks.bind(newTask);
+newTask.sortTasks = ToDoList.sortTasks.bind(newTask);
 
-newTask.sortTasks();
-newTask.showTasks();
+ToDoList.addTask('Помыть посуду', 2);
+ToDoList.addTask('Убрать комнату', 3);
+ToDoList.addTask('Погулять с собакой', 1);
+
+ToDoList.removeTask(2);
+ToDoList.updateTask(3, { title: 'Погулять с собаками' });
+
+ToDoList.sortTasks();
+ToDoList.showTasks();
 
 
 
