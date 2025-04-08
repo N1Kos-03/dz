@@ -1,0 +1,28 @@
+.calculator{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(34, 142, 192);
+    max-width: 400px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+input{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    width: 50px;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+

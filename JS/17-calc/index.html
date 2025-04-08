@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Простой калькулятор</title>
+</head>
+<body>
+  <div class="calculator">
+    <h2>Калькулятор</h2>
+    <input type="number" id="num1" placeholder="Число 1">
+    <input type="number" id="num2" placeholder="Число 2"><br>
+<div>
+    <button onclick="calc('+')">+</button>
+    <button onclick="calc('-')">-</button>
+    <button onclick="calc('*')">*</button>
+    <button onclick="calc('/')">/</button>
+</div>
+    <div id="result"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
