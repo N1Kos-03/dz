@@ -4,7 +4,7 @@ function Character(race, name, language) {
   this.language = language;
 }
 
-Character.prototype.говорить = function() {
+Character.prototype.speak = function() {
   console.log(`${this.name} говорит на языке: ${this.language}`);
 };
 
@@ -14,7 +14,7 @@ function Orc(name, weapon) {
 }
 Orc.prototype = Object.create(Character.prototype);
 Orc.prototype.constructor = Orc;
-Orc.prototype.удар = function() {
+Orc.prototype.stroke = function() {
   console.log(`${this.name} наносит удар оружием: ${this.weapon}`);
 };
 
@@ -24,20 +24,20 @@ function Elf(name, weapon) {
 }
 Elf.prototype = Object.create(Character.prototype);
 Elf.prototype.constructor = Elf;
-Elf.prototype.заклинание = function() {
+Elf.prototype.spell = function() {
   console.log(`${this.name} произносит заклинание...`);
 };
 
-Elf.prototype.создатьЗаклинание = function() {
+Elf.prototype.createSpell = function() {
   console.log(`${this.name} создает новое эльфское заклинание из древних рун.`);
 };
 
 const orc1 = new Orc("Грог", "Топор");
 const elf1 = new Elf("Мифлас", "Посох");
 
-orc1.говорить();        
-orc1.удар(); 
-elf1.говорить();              
-elf1.заклинание();        
-elf1.создатьЗаклинание(); 
+orc1.speak();        
+orc1.stroke(); 
+elf1.speak();              
+elf1.spell();        
+elf1.createSpell(); 
 
