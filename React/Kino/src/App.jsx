@@ -6,13 +6,14 @@ import Search from './components/Search/Search';
 function App() {
   return (
     <>
-      <Header/>
-      <Search/>
-      <Card/>
-    
+      <Header />
+      <Search onSearch={(query) => {
+        console.log("Поисковый запрос:", query);
+      }} />
+      <Card />
     </>
-
   )
 }
 
 export default App
+
