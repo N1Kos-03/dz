@@ -1,12 +1,15 @@
 import './App.css'
-import Button from './components/button/button';
+import Card from './components/Card/Card';
+import Header from './components/Header/Header';
+import Search from './components/Search/Search';
 
 function App() {
   return (
     <>
-      <h1>Поиск</h1>
-      <p className='p-16'>Введите название фильма, сериала или мультфильма для поиска и добавления в избранное.</p>
-      <Button/>
+      <Header/>
+      <Search/>
+      <Card/>
+    
     </>
 
   )
