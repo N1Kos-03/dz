@@ -13,8 +13,9 @@ const inputChange = (event) => {
 
   const handleSearch = () => {
     if (onSearch) onSearch(inputData);
-     console.log('Отправлено:', inputData);
+    console.log('Отправлено:', inputData);
   };
+
 
 
   return (
