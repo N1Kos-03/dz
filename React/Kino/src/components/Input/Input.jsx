@@ -2,7 +2,7 @@ import styles from './Input.module.css'
 
 function Input({ inputData, onChange, type, placeholder, leftIcon }) {
   return (
-    <div className={styles['input-wrapper']}>
+    <div className={styles['input-body']}>
       {leftIcon && (
         <div className={styles['input-img']}>
           {leftIcon}
@@ -11,9 +11,9 @@ function Input({ inputData, onChange, type, placeholder, leftIcon }) {
       <input 
         type={type}
         value={inputData}
-        onChange={onChange}
+        onChange={(e) => onChange(e.target.value)} 
         placeholder={placeholder}
-        className={styles['input']}
+        className={`${styles['input']} ${leftIcon ? styles['with-icon'] : ''}`}
       />
     </div>
   );
