@@ -1,13 +1,10 @@
 import styles from './Button.module.css'
+import React from 'react'
 
 
 
-function Button({text, onClick}) {
-  return (
-    <>
-     <button className={styles['button']} onClick={onClick}>{text}</button>
-    </>
-  )
-}
+const Button = React.forwardRef(({text, onClick}, ref) => {
+  return <button ref={ref} className={styles['button']} onClick={onClick}>{text}</button>
+})
 
 export default Button

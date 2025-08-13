@@ -1,6 +1,7 @@
 import styles from './Input.module.css'
+import React from 'react'
 
-function Input({ inputData, onChange, type, placeholder, leftIcon }) {
+const Input = React.forwardRef(({inputData, onChange, type, placeholder, leftIcon}, ref) => {
   return (
     <div className={styles['input-body']}>
       {leftIcon && (
@@ -9,6 +10,7 @@ function Input({ inputData, onChange, type, placeholder, leftIcon }) {
         </div>
       )}
       <input 
+        ref={ref}
         type={type}
         value={inputData}
         onChange={(e) => onChange(e.target.value)} 
@@ -17,6 +19,6 @@ function Input({ inputData, onChange, type, placeholder, leftIcon }) {
       />
     </div>
   );
-}
+})
 
 export default Input;
