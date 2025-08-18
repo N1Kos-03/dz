@@ -13,7 +13,7 @@ function Header({ user, onLogout }) {
         </li>
         {user ? (
           <li className={`${styles['header-menu__item']} ${styles['header-menu__onlogout']}`}>
-            <span className={styles['header-menu__user']}>{user.name}
+            <span className={styles['header-menu__user']}>{user}
             <img src="/user.svg" alt="Пользователь"/>
             </span>
             <a href='#' onClick={onLogout}>Выйти</a>
